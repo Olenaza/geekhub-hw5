@@ -1,0 +1,4 @@
+services:
+#    olenaza_hw_project.example:
+#        class: Olenaza\HW\ProjectBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

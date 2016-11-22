@@ -1,0 +1,7 @@
+olenaza_hw_project:
+    resource: "@OlenazaHWProjectBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
