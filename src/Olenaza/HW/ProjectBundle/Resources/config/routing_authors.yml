@@ -1,0 +1,7 @@
+authors_list:
+    path:     /
+    defaults: { _controller: OlenazaHWProjectBundle:Author:list }
+
+author_show:
+    path:     /{name}
+    defaults: { _controller: OlenazaHWProjectBundle:Author:show }
