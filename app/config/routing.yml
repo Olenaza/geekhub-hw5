@@ -1,7 +1,8 @@
 olenaza_hw_project:
-    resource: "@OlenazaHWProjectBundle/Resources/config/routing.yml"
-    prefix:   /
+    resource: "@OlenazaHWProjectBundle/Resources/config/routing_projects.yml"
 
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+olenaza_hw_project_authors:
+    resource: "@OlenazaHWProjectBundle/Resources/config/routing_authors.yml"
+    prefix: /authors
+
+

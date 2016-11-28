@@ -1,0 +1,31 @@
+projects_welcome_page:
+    path:     /
+    defaults: { _controller: OlenazaHWProjectBundle:Default:index }
+
+projects_list:
+    path:     /projects/{page}
+    defaults: { _controller: OlenazaHWProjectBundle:Default:list, page: 1 }
+    requirements:
+      page: '\d+'
+
+projects_list_no_page:
+    path:     /projects/
+    defaults:
+      _controller: FrameworkBundle:Redirect:urlRedirect
+      path: /projects
+      permanent: true
+
+project_show_documents:
+    path:     /projects/{slug}/docs
+    defaults: { _controller: OlenazaHWProjectBundle:Default:getProjectDocuments }
+
+project_show_document:
+    path:     /projects/{slug}/docs/{name}
+    defaults: { _controller: OlenazaHWProjectBundle:Default:getProjectDocument }
+    requirements:
+      name: cash-flow|swop-analisys|calendar-plan
+
+project_show:
+    path:     /projects/{slug}
+    defaults: { _controller: OlenazaHWProjectBundle:Default:show }
+

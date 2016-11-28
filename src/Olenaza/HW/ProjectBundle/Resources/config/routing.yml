@@ -1,3 +1,0 @@
-olenaza_hw_project_homepage:
-    path:     /
-    defaults: { _controller: OlenazaHWProjectBundle:Default:index }
